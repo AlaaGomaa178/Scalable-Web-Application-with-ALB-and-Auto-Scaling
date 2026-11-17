@@ -49,7 +49,7 @@ The design is built around a few goals. For availability, the subnets, NAT Gatew
 
 ![Solution architecture](architecture/architecture-diagram.png)
 
-*Figure 1: solution architecture. The editable source is [`architecture/architecture-diagram.drawio`](architecture/architecture-diagram.drawio), which opens in [draw.io](https://app.diagrams.net/).*
+*Figure 1: solution architecture.*
 
 [Open the editable architecture diagram in draw.io](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FAlaaGomaa178%2FScalable-Web-Application-with-ALB-and-Auto-Scaling%2Fmain%2Farchitecture%2Farchitecture-diagram.drawio)
 
@@ -63,6 +63,12 @@ The ALB health checks use the same HTTP 80 path as normal traffic (`/health`), a
 ![Request flow](architecture/request-flow.png)
 
 *Figure 2: path of a request from the browser to the database.*
+
+[Open the editable security layers diagram in draw.io](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FAlaaGomaa178%2FScalable-Web-Application-with-ALB-and-Auto-Scaling%2Fmain%2Farchitecture%2Fsecurity-layers.drawio)
+
+[View the source file](architecture/security-layers.drawio)
+
+
 
 1. A user opens `app.example.com`. Route 53 resolves the name with an alias record to the CloudFront distribution.
 2. CloudFront matches the request to a cache behavior:
@@ -99,6 +105,11 @@ The Internet Gateway serves the public subnets (ALB nodes, NAT Gateways). Each N
 ![Security layers](architecture/security-layers.png)
 
 *Figure 3: how traffic and administrator access are restricted.*
+
+[Open the editable security layers diagram in draw.io](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FAlaaGomaa178%2FScalable-Web-Application-with-ALB-and-Auto-Scaling%2Fmain%2Farchitecture%2Fsecurity-layers.drawio)
+
+[View the source file](architecture/security-layers.drawio)
+
 
 ### 5.1 Security groups
 

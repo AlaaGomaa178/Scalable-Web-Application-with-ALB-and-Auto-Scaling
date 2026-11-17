@@ -51,6 +51,11 @@ The design is built around a few goals. For availability, the subnets, NAT Gatew
 
 *Figure 1: solution architecture. The editable source is [`architecture/architecture-diagram.drawio`](architecture/architecture-diagram.drawio), which opens in [draw.io](https://app.diagrams.net/).*
 
+[Open the editable architecture diagram in draw.io](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FAlaaGomaa178%2FScalable-Web-Application-with-ALB-and-Auto-Scaling%2Fmain%2Farchitecture%2Farchitecture-diagram.drawio)
+
+[View the source file](architecture/architecture-diagram.drawio)
+
+
 The ALB health checks use the same HTTP 80 path as normal traffic (`/health`), and the standby database in AZ B is only used after a failover.
 
 ## 3. Request flow

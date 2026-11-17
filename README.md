@@ -53,8 +53,6 @@ The design is built around a few goals. For availability, the subnets, NAT Gatew
 
 [Open the editable architecture diagram in draw.io](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FAlaaGomaa178%2FScalable-Web-Application-with-ALB-and-Auto-Scaling%2Fmain%2Farchitecture%2Farchitecture-diagram.drawio)
 
-[View the source draw.io file](architecture/architecture-diagram.drawio)
-
 
 The ALB health checks use the same HTTP 80 path as normal traffic (`/health`), and the standby database in AZ B is only used after a failover.
 
@@ -65,8 +63,6 @@ The ALB health checks use the same HTTP 80 path as normal traffic (`/health`), a
 *Figure 2: path of a request from the browser to the database.*
 
 [Open the editable security layers diagram in draw.io](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FAlaaGomaa178%2FScalable-Web-Application-with-ALB-and-Auto-Scaling%2Fmain%2Farchitecture%2Fsecurity-layers.drawio)
-
-[View the source draw.io file](architecture/security-layers.drawio)
 
 
 
@@ -107,8 +103,6 @@ The Internet Gateway serves the public subnets (ALB nodes, NAT Gateways). Each N
 *Figure 3: how traffic and administrator access are restricted.*
 
 [Open the editable security layers diagram in draw.io](https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FAlaaGomaa178%2FScalable-Web-Application-with-ALB-and-Auto-Scaling%2Fmain%2Farchitecture%2Fsecurity-layers.drawio)
-
-[View the source draw.io file](architecture/security-layers.drawio)
 
 
 ### 5.1 Security groups
